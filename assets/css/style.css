@@ -7,7 +7,7 @@
     background-color: antiquewhite;
     display: flex;
     gap: 232.5px ;
-    padding-left: 165px;
+    padding:21.84px 165px;
 }
 .list ul{
     display:flex;
@@ -17,4 +17,23 @@
     display: flex;
     gap: 24px;
     list-style-type: none;
+}
+.collection_section{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px ;
+    background-color: bisque;
+    padding: 80px 165px ;
+    
+}
+.collection{
+    width: ( (100%-90px) / 4) ;
+}
+h2{
+    text-align: center;
+    margin-top: 23px ;
+}
+img{
+    width: 100%;
+
 }
