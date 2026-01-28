@@ -34,3 +34,27 @@ h2{
 img{
     width: 100%;
 }
+.offers{
+    display: flex;
+    text-align: center;
+    padding: 40px 165px;
+}
+.coll-offer{
+    width: 389px;
+    margin: 64px 78.5px 24px 78.5px;
+    
+
+}
+p{
+    display: block;
+    max-width: 389px;
+    margin:0 83px 32px 83px;
+}
+.offer-img{
+    width: 555px;
+    height: 348px;
+}
+.shopnow{
+    padding: 15px 18px;
+    margin-bottom: 64px;
+}
