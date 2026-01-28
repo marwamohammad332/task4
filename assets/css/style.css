@@ -25,9 +25,9 @@
     
 }
 .collection{
-    width:calc( ( 100% - 90px - 330px ) / 4) ;
+    width:calc( ( 100% - 90px ) / 4) ;
 }
-h2{
+.collection h2{
     text-align: center;
     margin-top: 23px ;
 }
@@ -37,24 +37,20 @@ img{
 .offers{
     display: flex;
     text-align: center;
+    background-color: antiquewhite;
     padding: 40px 165px;
 }
-.coll-offer{
-    width: 389px;
-    margin: 64px 78.5px 24px 78.5px;
-    
-
+.offer{
+    width: calc( 100%  / 2 ) ;
 }
-p{
-    display: block;
+.para{
     max-width: 389px;
-    margin:0 83px 32px 83px;
+    margin-top: 64px;
 }
-.offer-img{
-    width: 555px;
-    height: 348px;
+.para p{
+    padding-top: 24px;
+    padding-bottom: 32px;
 }
-.shopnow{
+.para a{
     padding: 15px 18px;
-    margin-bottom: 64px;
 }
