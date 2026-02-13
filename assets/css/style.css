@@ -19,7 +19,7 @@ html{
     margin: 0 auto;
 
 }
-.header .row {
+.row {
 display: flex;
 flex-wrap: wrap;
 align-items: center;
@@ -75,8 +75,6 @@ justify-content: space-between;
     padding: 40px 0 ;   
 }
 .collection_section .row{
- display: flex;
-    flex-wrap: wrap;
     gap: 30px ;
 }
 .collection{
@@ -188,7 +186,7 @@ flex-wrap: wrap;
 .offer img{
     width: 100%;
 }
-
+}
 @media screen and ( min-width:770px ) and ( max-width:1080px ){
 .para h2{
     font-size: 20px;
@@ -203,4 +201,67 @@ flex-wrap: wrap;
 .para a{
     font-size: 12px;
 }  
+}
+.bestsellers{
+    text-align: center;
+    padding: 40px 0 ;
+    background-color:rgb(237, 239, 239);
+}
+.bestsellers h2{
+    font-family: "EB Garamond", serif;
+    font-size: 30px;
+    font-weight: 700;
+    line-height: 36px;
+    text-transform: uppercase;
+    color: var(--Primarycolor);
+    margin-bottom: 48px;
+}
+.bestsellers .row{
+    gap: 30px;
+}
+.bestseller_item{
+    width:calc(( 100% - 90px ) / 4);
+}
+.item_discrebtion{
+    text-align: left;
+}
+.item_discrebtion h3{
+    font-family: var(--Primaryfontfamily);
+    color: var(--Primarycolor);
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 20px;
+    letter-spacing: 0.7px;
+    text-transform:uppercase;
+    margin-bottom: 12px;
+    margin-top: 24px;
+}
+.price{
+    font-family: var(--Primaryfontfamily);
+    color: var(--Primarycolor);
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 20px;
+}
+.discrebtion{
+    font-family: var(--Primaryfontfamily);
+    color: #807F86;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 22px;
+    margin: 24px 0 58px 0;
+}
+.add_to_cart{
+    font-family: var(--Primaryfontfamily);
+    color: var(--Primarycolor);
+    font-size: 12px;
+    font-weight: 600;
+    line-height: 18px;
+    letter-spacing: 1px;
+    padding: 15px 18px;
+    text-transform: uppercase;
+    background-color: white;
+    border: black solid 1px;
+    width: 100%;
+    margin-bottom: 40px;
 }
