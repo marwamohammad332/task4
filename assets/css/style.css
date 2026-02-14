@@ -235,6 +235,7 @@ flex-wrap: wrap;
     text-transform:uppercase;
     margin-bottom: 12px;
     margin-top: 24px;
+    height: 30px;
 }
 .price{
     font-family: var(--Primaryfontfamily);
@@ -250,6 +251,7 @@ flex-wrap: wrap;
     font-weight: 400;
     line-height: 22px;
     margin: 24px 0 58px 0;
+    height: 70px;
 }
 .add_to_cart{
     font-family: var(--Primaryfontfamily);
