@@ -36,6 +36,11 @@ justify-content: space-between;
     font-family: var(--Primaryfontfamily);
     font-size: 14px;
     font-weight: 400;
+    transition-property: color;
+    transition-duration: 1s;
+}
+.header a:hover{
+    color: blue;
 }
 .cart{
     display: none;
@@ -44,7 +49,12 @@ justify-content: space-between;
     display: flex;
     gap: 24px;
     list-style-type: none;
-
+}
+.icons li:hover{
+    background-color: rgb(153, 153, 193);
+}
+.icons li{
+    transition: background-color 1s;
 }
 @media screen and ( min-width:670px ) and ( max-width:881px ) {
     .list ul{
@@ -76,10 +86,10 @@ justify-content: space-between;
 }
 .collection_section .row{
     gap: 30px ;
+    display: grid;
+    grid-template-columns: repeat(auto-fit , minmax( 150px , 1fr ));
 }
-.collection{
-    width:calc( ( 100% - 90px ) / 4) ;
-}
+
 .collection h2{
     text-align: center;
     margin-top: 23px ;
@@ -93,40 +103,14 @@ justify-content: space-between;
 img{
     width: 100%;
 }
-@media screen and ( min-width:0 ) and ( max-width:400px ){
-   .collection_section .row{
-    flex-direction: column;
-   }
-.collection{
-    width: 100%;
-}
-}
-@media screen and ( min-width:401px ) and ( max-width:770px ){
-.collection{
-    width: calc( ( 100% - 30px ) / 2);
-}
-.collection h2{
-    font-size: 13px;
-}
-}
-@media screen and ( min-width:771px ) and ( max-width:900px ){
-.collection{
-    width: calc( ( 100% - 60px ) / 3);
-}
-.collection h2{
-    font-size: 13px;
-}
-}
 .offers{
      padding: 40px 0;
 }
 .offers .row{
-display: flex;
-flex-wrap: wrap;
-   
+display: grid;
+grid-template-columns: repeat(auto-fit,minmax(250px,1fr));   
 }
 .offer{
-    width: calc( 100%  / 2 ) ;
     text-align: center;
 }
 .offer img{
@@ -168,40 +152,6 @@ flex-wrap: wrap;
    color:#3A3845;
    padding: 15px 18px;
 }
-@media screen and ( min-width:0 ) and ( max-width:770px ){
-.offers .row{
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
-.para h2{
-    font-size: 18px;
-}
-.para p{
-    font-size: 8px;
-}
-.para a{
-    font-size: 8px;
-}
-.offer img{
-    width: 100%;
-}
-}
-@media screen and ( min-width:770px ) and ( max-width:1080px ){
-.para h2{
-    font-size: 20px;
-       max-width: 300px;
-
-}
-.para p{
-    font-size: 12px;
-       max-width: 300px;
-
-}
-.para a{
-    font-size: 12px;
-}  
-}
 .bestsellers{
     text-align: center;
     padding: 40px 0 ;
@@ -218,9 +168,8 @@ flex-wrap: wrap;
 }
 .bestsellers .row{
     gap: 30px;
-}
-.bestseller_item{
-    width:calc(( 100% - 90px ) / 4);
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(200px,1fr));
 }
 .item_discrebtion{
     text-align: left;
@@ -266,24 +215,72 @@ flex-wrap: wrap;
     border: black solid 1px;
     width: 100%;
     margin-bottom: 40px;
+    transition: background-color 1.2s , color 1.2s;
+    cursor: pointer;
 }
-@media screen and ( min-width:0 ) and ( max-width:400px ){
-   
-    .bestsellers .row{
-        flex-direction: column;
-    } 
-    .bestseller_item{
-        width: 100%;
-    }
+.bestseller_item:hover .add_to_cart{
+    background-color: rgb(144, 144, 181);
+    color: white;
 }
-@media screen and ( min-width:401px ) and ( max-width:700px ){
-    .bestseller_item{
-        width: calc((100% - 30px) / 2);
-    }
+.about{
+    padding: 40px 0;
 }
-@media screen and ( min-width:701px ) and ( max-width:900px ){
-    .bestseller_item{
-        width: calc((100% - 60px) / 3);
-    }
+.about .row{
+    display: grid;
+    grid-template-columns: repeat(2,minmax(250px,1fr));
+}
+.aboutus{
+    height: 348px;
+    overflow: hidden;
+    text-align: center;
+}
+.aboutus  div {
+    height: 100%;
+}
+.aboutus img{
+height: 100%;
+object-fit: cover;
+display: block;
+}
+.introduction{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.introduction h2{
+    font-family: "EB Garamond", serif;
+    font-size: 28px;
+    color: var(--Primarycolor);
+    line-height: 32px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    font-weight: 700;
+    max-width: 398px;
+}
+.introduction p{
+font-family: var(--Primaryfontfamily);
+color: #595667;
+font-size: 16px;
+font-weight: 400;
+line-height: 24px;
+margin: 24px 0 32px 0;
+ max-width: 435px;
+}
+.introduction a{
+    font-family: var(--Primaryfontfamily);
+    color: var(--Primarycolor);
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 20px;
+    letter-spacing: 1.3px;
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: color 1s ,background-color 2s ;
+}
+.introduction a:hover{
+    color: rgb(189, 189, 218);
+    background-color: black;
 }
 
